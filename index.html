@@ -35,8 +35,6 @@ body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.6 Roboto,-apple-s
 .sbtn:hover{border-color:#cfd3da}
 .sbtn svg{width:16px;height:16px;flex:none}
 .sbtn kbd{margin-left:auto;font:11px inherit;font-family:inherit;color:#6b7280}
-.login{margin-left:12px;display:inline-flex;align-items:center;height:36px;padding:0 18px;border-radius:8px;background:var(--brand);color:#fff;font-weight:600;font-size:14px;text-decoration:none}
-.login:hover{filter:brightness(1.1)}
 
 /* ---------- Search modal ---------- */
 .sm{position:fixed;inset:0;z-index:100;display:flex;align-items:flex-start;justify-content:center;padding:12vh 16px 0;background:rgba(40,40,60,.5)}
@@ -190,7 +188,7 @@ a{color:var(--brand)}
   .topbar .vtag,.topbar .tab svg,.tab .long{display:none}
   .topbar .tab{padding:6px 8px;font-size:13px}
   .topbar .logo{margin-right:6px}.topbar .logo img{height:26px}
-  .lang{margin-left:6px}.login{margin-left:6px;padding:0 12px}
+  .lang{margin-left:6px}
 }
 @page{size:A3 landscape;margin:12mm}
 @media print{
@@ -232,7 +230,6 @@ a>code{color:var(--brand)}
   .burger{padding:4px;margin-right:0}
   .sbtn{padding:0 8px;height:34px}
   .lang{margin-left:4px;height:34px}.lang button{padding:0 7px;font-size:12px}
-  .login{margin-left:4px;padding:0 10px;height:34px;font-size:13px}
 }
 
 /* ---- multi-dokumen ---- */
@@ -308,7 +305,6 @@ mark.ph{display:inline}
 <span class="grow"></span>
 <button class="sbtn" type="button" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span>Search</span><kbd>&#8984;K</kbd></button>
 <div class="lang" role="group" aria-label="Language"><button type="button" data-lang="id" class="on">ID</button><button type="button" data-lang="en">EN</button></div>
-<a class="login" href="https://reports.airpay.mobi/" target="_blank" rel="noopener">Login</a>
 </header>
 <div class="scrim"></div>
 <div class="sm" id="sm" hidden><div class="sm-box" role="dialog" aria-label="Search">

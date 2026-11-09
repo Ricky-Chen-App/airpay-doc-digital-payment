@@ -1376,12 +1376,12 @@ X-SIGNATURE: &lt;Base64 RSA signature&gt;</code></pre></div></div><div class="ca
       el.textContent = l==='en' ? el.getAttribute('data-en') : el.__id;
     });
     document.querySelectorAll('.lang button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-lang')===l);});
-    try{localStorage.setItem('airpay-lang',l);}catch(e){}
+    try{localStorage.setItem('airpay-lang-v2',l);}catch(e){}
     buildIndex(); if(tocSec) buildToc(tocSec);
     if(!sm.hidden) render(sq.value.trim());
   }
   document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){applyLang(b.getAttribute('data-lang'));});});
-  var savedLang=null; try{savedLang=localStorage.getItem('airpay-lang');}catch(e){}
+  var savedLang=null; try{savedLang=localStorage.getItem('airpay-lang-v2');}catch(e){}
   // --- Tab contoh kode (codetabs): bahasa pilihan disinkronkan antar blok
   (function(){
     var boxes=[].slice.call(document.querySelectorAll('.cs'));
@@ -1433,6 +1433,6 @@ X-SIGNATURE: &lt;Base64 RSA signature&gt;</code></pre></div></div><div class="ca
   })();
 
   route();
-  if(savedLang==='en') applyLang('en');
+  if(savedLang!=='id') applyLang('en');
 })();
 </script></body></html>
